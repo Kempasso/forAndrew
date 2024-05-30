@@ -1,0 +1,44 @@
+@import "../styles/variables";
+
+.sort-buttons-container {
+  width: 502px;
+  display: flex;
+  margin-bottom: 18px;
+
+  button {
+    width: 168px;
+    padding: 10px 20px;
+    cursor: url("../img/icons/Cursor.svg"), auto;
+    border: none;
+    color: $colorText;
+    background-color: $colorBgWhite;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $colorHover;
+    }
+
+    &.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:nth-child(2) {
+      border-radius: 0;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
